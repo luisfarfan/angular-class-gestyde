@@ -48,7 +48,7 @@ export class UserComponent implements OnInit, AfterViewInit, OnDestroy {
     }
 
     ngOnDestroy(): void {
-        // clearInterval(this.interval);
-        // this.interval = null;
+        clearInterval(this.interval);
+        this.interval = null;
     }
 }
