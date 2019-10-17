@@ -1,1 +1,9 @@
 <p>CHori!!!!!!!!!!!!!!</p>
+<app-client-form [userCount]="usuariosCount" (addUser)="getUser($event)">
+</app-client-form>
+
+<ul>
+    <li *ngFor="let user of usuarios">
+        {{ user.nombre }} {{ user.apellido }}
+    </li>
+</ul>

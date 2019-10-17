@@ -1,0 +1,15 @@
+<span>{{ userCount }}</span>
+<form [formGroup]="userForm">
+    <div>
+        <label for="nombre">Nombre:</label>
+        <input formControlName="nombre" id="nombre" type="text">
+    </div>
+
+    <div>
+        <label for="apellido">Apellido:</label>
+        <input formControlName="apellido" id="apellido" type="text">
+    </div>
+    <div>
+        <button type="button" (click)="enviarDatos()">ENVIAR</button>
+    </div>
+</form>
